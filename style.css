@@ -1,0 +1,266 @@
+.navBarContainer{
+    display: flex;
+    background-color: #0bb8d6e2;
+    height: 84px;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+
+}
+.logo{
+    
+    border: solid 2px ;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 50px;
+}
+.home-about-contact{
+    display: flex; 
+}
+.home-about-contact > ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 20px 0 0;
+}
+
+li > a{
+    color: white;
+    font-size: large;
+    text-decoration: none; /*to delete the line under anchor tag*/
+}
+
+.bannerdiv{
+    height: 619px;
+}
+
+.bannerImage{
+    position: absolute;
+    display: block;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wlc-msg{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #0bb8d6e2,#dea5c8, #8f92a3); /* Gradient colors */
+    -webkit-background-clip: text; /* Applies gradient to text */
+    background-clip: text;
+    color: transparent; /*Hides original text color*/
+    margin-left: 50px;
+    font-size: 50px;
+    bottom: 10px;
+}
+
+.wlc-icon{
+    position: absolute;
+    width: 75px;
+}
+
+.footerColor{
+    background-color: #0bb8d6e2;
+    height: 55px;
+    margin: 0;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.f1{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+}
+.f2{
+    grid-column: 4; 
+    /* to start at the end of the grid  */
+}
+
+.m0{
+    margin: 0;
+}
+.profileImage{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.myProfileContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.myName{
+    color: #0bb8d6e2 ;
+    margin-bottom: 0px;
+}
+.ParagraphProfile{
+    margin-top: 0px ;
+    text-align: center;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MySkillsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    gap: 20px;
+}
+.skillsPhotos{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.MySkillsContainer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+.s0{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    /* margin-bottom: 0; */
+    
+}
+
+.s1{
+    grid-column: 1;
+    
+}
+
+
+.p1{
+    color: black;
+    /* font-weight: bold; */
+    font-size: 25px;
+    border: 1px #d5d5d5 solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+}
+
+.p11{
+    color: black;
+    /* font-weight: bold; */
+    font-size: 15px;
+    border: 1px #d5d5d5 solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:white;
+    width: 100%;
+    height: 110px; 
+}
+
+.btn-p{
+    background-color: #0bb8d6e2;
+    font-weight: bold;
+    font-size: 20px;
+    width: 95%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.circle{
+    border: solid 1.5px ;
+    border-radius: 20%;
+}
+
+
+
+
+/* to add a local font  */
+@font-face {
+    font-family: 'Kugile_Demo';
+    src: url('./fonts/kugile/Kugile_Demo.ttf') format('truetype');
+  }
+
+  @media (max-width: 660px){
+
+    .logo{
+        font-size: 10px;
+        margin: 0;
+    }
+    .navBarContainer{
+        display: flex;
+        background-color: #0bb8d6e2;
+        height: 84px;
+        justify-content: center;
+        align-items: center;
+   
+    }
+
+    .wlc-msg{
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(to right, #0bb8d6e2,#dea5c8, #8f92a3); /* Gradient colors */
+        -webkit-background-clip: text; /* Applies gradient to text */
+        background-clip: text;
+        color: transparent; /*Hides original text color*/
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .wlc-icon{
+        position: absolute;
+        width: 50px;
+    }
+
+    .bannerImage{
+        position: absolute;
+        display: block;
+        height: 300px;
+        width: 100%;
+        object-fit:scale-down;
+    }
+    .bannerdiv{
+        height: 300px;
+    }
+    .s0{
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        /* margin-bottom: 0; */
+        
+    }
+    
+    .s1{
+        grid-column: 2;
+        
+    }
+    .s2{
+        grid-column: 2;
+
+    
+    }
+    .s3{
+        grid-column: 2;
+
+    }
+    
+    
+  }
+    
+  
